@@ -1,0 +1,72 @@
+.details h4 {
+    font-family: "Nunito",Helvetica, Arial, Verdana, sans-serif;
+    font-weight: 700;
+    text-align: center;
+    font-size: 32px;
+    color: #198754;
+    margin-bottom: 40px;
+}
+.details .create {
+    background-color: #198754;
+    color: white;
+    padding: 3px 50px;
+    border: 2px solid #198754;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+}
+table{
+    margin-top: 20px;
+}
+.details .create :hover {
+    background-color: white;
+    color: #198754;
+    border-color: #198754;
+}
+.details .table .edit {
+    background-color: blue;
+    color: white;
+    padding: 5px 25px;
+    border: 2px solid blue;
+    border-radius: 5px;
+    font-size: 12px;
+    cursor: pointer;
+    text-decoration: none;
+}
+.details .table .delete {
+    background-color: crimson;
+    color: white;
+    padding: 5px 20px;
+    border: 2px solid crimson;
+    border-radius: 5px;
+    font-size: 12px;
+    cursor: pointer;
+    text-decoration: none;
+}
+.details .table .edit button:hover{
+    transform: scale(1.1);
+}
+.details .table .delete button:hover{
+    transform: scale(1.1);
+}
+.table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+.table th,
+.table td {
+    padding: 10px;
+    text-align: left;
+}
+.table th {
+    background-color: #f1f1f1;
+    font-weight: bold;
+} 
+.table td {
+    background-color: #fff;
+} 
+.table tbody tr:hover {
+    background-color: #f9f9f9;
+}

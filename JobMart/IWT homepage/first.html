@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="my.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>JOB Mart</title>
+</head>
+<body>
+    <!-- Navigation Bar Section -->
+    <div class="nav-logo">
+        <div class="logo">
+            <img src="Images/J (4).png" alt="Logo">
+        </div>
+        <div class="navbar">
+            <ul>
+                <li><a href = "/Users/a.ssaneef/Desktop/IWT homepage/first.html">HOME</a></li>
+                <li><a href = "#">JOBS</a></li>
+                <li><a href = "#">LOGIN</a></li>
+                <li><a href = "#">CONTACT US</a></li>
+                <li><a href = "#">HELP & SUPPORT</a></li>
+                <li><a href = "#">ABOUT US</a></li>
+            </ul>
+        </div>
+        <div class="search-bar">
+            <form>
+              <input type="text" placeholder="Search.." name="search">
+              <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+        <div class="user">
+            <a href="#"><img src="Images/user.jpeg" alt="Avatar" ></a>
+        </div>
+    </div>
+    
+    <!-- Main Content Section -->
+    <div class="main">
+        <div class="content-image">
+            <img src="Images/content image.png" alt="LOGO">
+        </div>
+        <div class="content">
+            <p>Discover your next career <br>opportunity with our comprehensive <br>online <span id="typing-effect"></span></p>
+        </div>
+    </div>
+
+
+
+    <!-- Intro Section -->
+    <div class="intro">
+        <p class="head">Welcome to our Job Mart</p>
+        <p class="under">Dedicated to you</p>
+        <p class="under-details">New Company & Excellence Jobs</p>
+        <p class="detail-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, dicta ipsam! Non soluta error ipsum impedit laboriosam consectetur odit itaque corporis provident a? Incidunt atque <br><br>possimus minus maiores nostrum necessitatibus.</p>
+        <p class="details-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium mollitia voluptas, aspernatur labore quis modi eveniet neque libero velit, laborum saepe eaque repudiandae \facilis <br><br>excepturi perferendis enim inventore optio minima.</p>
+        <hr>
+    </div>
+
+
+    <div class="latest-news">
+        <div class="news-heading">News latter</div>
+        <div class="card">
+            <div class="card-1">
+                <img src="Images/writing-note-showing-re-hiring-business-photo-showcasing-advertising-employment-workforce-placement-new-job-white-pc-concept-158959229.webp" alt="Will show">
+                <div class="container-1">
+                    <h4><b>We are Hiring</b></h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa optio voluptatibus commodi vero ducimus similique? Omnis odit consectetur, inventore perferendis quae fuga necessitatibus nisi nobis accusantium, est facilis ipsam corrupti? </p>
+                </div>
+            </div>
+            <div class="card-2">
+                <img src="Images/writing-note-showing-re-hiring-business-photo-showcasing-advertising-employment-workforce-placement-new-job-white-pc-concept-158959229.webp" alt="">
+                <div class="container-2">
+                    <h4><b>New one</b></h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla deserunt quod numquam saepe iusto explicabo ea suscipit molestias laborum. Maxime deserunt libero inventore laudantium quidem quaerat quibusdam ad architecto minus! </p>
+                </div>
+            </div>
+            <div class="card-3">
+                <img src="Images/writing-note-showing-re-hiring-business-photo-showcasing-advertising-employment-workforce-placement-new-job-white-pc-concept-158959229.webp" alt="">
+                <div class="container-3">
+                    <h4><b>Great come</b></h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla deserunt quod numquam saepe iusto explicabo ea suscipit molestias laborum. Maxime deserunt libero inventore laudantium quidem quaerat quibusdam ad architecto minus! </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Company Section -->
+    <div class="company">
+        <p class="heading">Companies</p>
+        <p class="heading-under">We gives your future career paradise here</p>
+    </div>
+    <div class="company-image">
+        <div class="image-1"><img src="Images/10.jpg" alt="Sample"></div>
+        <div class="image-2"><img src="Images/2.jpg" alt="Sample"></div>
+        <div class="image-2"><img src="Images/3.jpg" alt="Sample"></div>
+        <div class="image-2"><img src="Images/4.jpg" alt="Sample"></div>
+        <div class="image-2"><img src="Images/5.jpg" alt="Sample"></div>
+        <div class="image-2"><img src="Images/6.jpg" alt="Sample"></div>
+        <div class="image-2"><img src="Images/7.jpg" alt="Sample"></div>
+        <div class="image-2"><img src="Images/8.jpg" alt="Sample"></div>
+        <div class="image-2"><img src="Images/9.jpg" alt="Sample"></div>
+        <div class="image-2"><img src="Images/1.jpg" alt="Sample"></div>
+    </div>
+    
+
+    <!-- Footer Section -->
+    <div class="footer">
+        <span>Developed By <a href="">Job Mart</a> | <span class="fa fa-copyright"></span> 2023 All rights reserved.</span>
+    </div>
+
+     
+<!-- Script section -->
+ <script>
+    
+    const text = "Job Mart!";
+    let index = 0;
+    let isDeleting = false;
+    const speed = 200;
+
+function typeWriter() {
+  const typingEffect = document.getElementById("typing-effect");
+  if (isDeleting) {
+    typingEffect.textContent = text.substring(0, index - 1);
+    index--;
+  } else {
+    typingEffect.textContent = text.substring(0, index + 1);
+    index++;
+  }
+
+  if (index === text.length) {
+    isDeleting = true;
+  } else if (index === 0 && isDeleting) {
+    isDeleting = false;
+  }
+
+  setTimeout(typeWriter, speed);
+}
+
+typeWriter();
+
+</script>
+
+</body>
+</html>
